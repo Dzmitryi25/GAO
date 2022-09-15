@@ -1,0 +1,33 @@
+.interests {
+
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__item {
+        padding: 15px 24px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        border: solid 1px #E5E4E1;
+
+
+        input {
+            display: none;
+            
+            &:checked ~ div {
+                color: red;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,40 @@
+.finish {
+    &__wrapper {
+        max-width: 600px;
+    }
+    &__logo {
+        margin-bottom: 40px;
+        @media screen and (min-width:990px) {
+            margin-bottom: 130px;
+        }
+    }
+    &__big__logo {
+        margin-bottom: 40px;
+    }
+    &__title {
+        margin-bottom: 10px;
+    }
+    &__subtitle {
+        margin-bottom: 10px;
+    }
+    .first__text {
+        margin-bottom: 20px;
+        @media screen and (min-width:990px) {
+            margin-bottom: 40px;
+        }
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 340px;
+        height: 60px;
+        background-color: #EB3D35;
+        margin-top: 60px;
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+    
+}

@@ -1,0 +1,87 @@
+.profile {
+    &__title {
+        margin-bottom: 10px;
+    }
+    &__text {
+        margin-bottom: 40px;
+        max-width: 600px;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 80px;
+
+        @media screen and (min-width:768px) {   
+            flex-direction: row;
+        }
+        
+    }
+    &__image {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        margin-right: 40px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #F3F6F9;
+        border: 2px #051655 dashed;
+        cursor: pointer;
+        margin-bottom: 30px;
+        @media screen and (min-width:468px) {   
+            height: 360px;
+            width: 360px;
+        }
+        @media screen and (min-width:768px) {   
+            margin-bottom: 0;
+        }
+        img {
+            margin-bottom: 30px;
+        }
+        p {
+            font-weight: 494;
+            font-size: 20px;
+            line-height: 22px;
+            color: #051655;
+        }
+    }
+
+    .social__media__wrapper {
+        flex-grow:1;
+        .social__media__title {
+            margin-bottom: 10px;
+        }
+        .input__wrapper {
+            position: relative;
+            margin-bottom: 10px;
+            height: 60px;
+            border: 1px solid #E5E4E1;
+            img {
+                margin-left: 30px;
+                margin-top: 19px;
+            }
+            input {
+                position: absolute;
+                left: 65px;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                border: none;
+                font-weight: 375;
+                    font-size: 18px;
+                    line-height: 20px;
+                    color: #747887;
+
+                &:focus-visible {
+                    outline: none;
+                }
+                &::placeholder {
+                    font-weight: 375;
+                    font-size: 18px;
+                    line-height: 20px;
+                    color: #747887;
+                }
+            }
+        }
+    }
+}

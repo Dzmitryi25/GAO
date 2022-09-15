@@ -1,0 +1,97 @@
+.header__wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    @media screen and (min-width:480px) {
+        flex-direction: row;
+    }
+
+    .header__image {
+        width: 100%;
+        height: 100%;
+        @media screen and (min-width:480px) {
+            width: 100%;
+            height:100%;
+        }
+        
+        position: relative;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .header__info {
+        padding: 15px 10px;
+        height: 100%;
+        @media screen and (min-width:480px) {
+            width: 100%;
+            padding-top: 25px;
+            padding-left: 30px;
+        }
+
+        @media screen and (min-width:990px) {
+            padding-top: 70px;
+            padding-left: 100px;
+        }
+
+        position: relative;
+
+        .header__logo {
+            margin-bottom: 20px;
+            @media screen and (min-width:1200px) {
+                margin-bottom: 90px;
+            }
+        }
+        .header__title {
+            margin-bottom: 10px;
+            
+        }
+        .header__text {
+            margin-bottom: 40px;
+        }
+        .wrapper__link {
+            display: inline-block;
+            padding: 18px 85px 18px 30px;
+            background-color: #EB3D35;
+            cursor: pointer;
+            a {
+                text-decoration: none;
+            }
+
+            &:hover {
+                opacity: 0.85;
+            }
+        }
+        .header__subtitle {
+            position: absolute;
+            bottom: 30px;
+            @media screen and (min-width:1200px) {
+                bottom: 60px;
+            }
+            font-family: 'Author';
+            font-style: normal;
+            font-weight: 375;
+            font-size: 18px;
+            line-height: 20px;
+            color: #747887;
+
+            span {
+                color: #C35B48;
+                cursor: pointer;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+
+

@@ -1,0 +1,129 @@
+.main__form {
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__text {
+    margin-bottom: 40px;
+    max-width: 600px;
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-bottom: 40px;
+        max-width: 460px;
+        height: 60px;
+
+        border: 1px solid #E5E4E1;
+        img {
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            left: 30px;
+        }
+        input {
+            padding-left: 65px;
+            width: 100%;
+            height: 100%;
+            border: none;
+            font-family: 'Author';
+            font-style: normal;
+            font-weight: 375;
+            font-size: 18px;
+            line-height: 20px;
+            color: #747887;
+        }
+    }
+    .step {
+        display: none;
+        &.active {
+            display: block;
+        }
+
+        .radio {
+            &__title {
+                margin-bottom: 20px;
+                font-family: 'Author';
+                font-style: normal;
+                font-weight: 494;
+                font-size: 25px;
+                line-height: 28px;
+                color: #051655;
+            }
+        
+            &__wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+        
+                margin-bottom: 20px;
+                @media screen and (min-width:768px) {
+                    margin-bottom: 40px;
+                }
+                @media screen and (min-width:990px) {
+                    margin-bottom: 80px;
+                }
+            }
+        
+            &__item {
+                display: flex;
+                align-items: center;
+                width: calc( 100% );
+                height: 80px;
+                background: #F3F6F9;
+                margin-bottom: 20px;
+                padding-left: 20px;
+                padding-right: 25px;
+                
+                @media screen and (min-width:584px) {
+                    width: calc( 100% / 2 - 30px / 2 );
+                }
+        
+                @media screen and (min-width:990px) {
+                    width: calc( 100% / 3 - 40px / 3 );
+                }
+                &__image {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 20px;
+                    width: 60px;
+                    height: 60px;
+                    background-color: white;
+                }
+        
+                &__title {
+                    font-weight: bold;
+                    flex-grow: 1;
+        
+                    font-family: 'Author';
+                    font-style: normal;
+                    font-weight: 494;
+                    font-size: 20px;
+                    line-height: 22px;
+                    color: #051655;
+                }
+        
+                &__input {
+                    width: 30px;
+                    height: 30px;
+        
+                    input {
+                        height: 100%;
+                        width: 100%;
+        
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+        
+                
+        
+            }
+        
+        }
+    }
+}

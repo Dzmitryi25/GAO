@@ -1,0 +1,18 @@
+@import 'reset.scss';
+@import 'header.scss';
+@import 'text.scss';
+//Blocks
+@import 'blocks/steps_numbers.scss';
+@import 'blocks/checkbox.scss';
+@import 'blocks/profile.scss';
+@import 'blocks/finish.scss';
+@import 'blocks/interests.scss';
+
+//Components
+@import './components/buttons.scss';
+
+.container {
+    max-width: 1120px;
+    margin: 40px auto 50px;
+    padding: 0 15px;
+}
